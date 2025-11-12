@@ -29,6 +29,7 @@ AI-powered resume analysis tool that evaluates ATS compatibility, job-fit releva
 - Real-time analysis with detailed score breakdown
 - Separate display for technical and soft skills (matched/missing)
 - Personalized recommendations based on individual gaps
+- **AI-powered DOCX reports** with Llama 2 3B (optional)
 - Export-ready reports
 
 ---
@@ -62,7 +63,13 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk
 # 5. Download ML models
 python download_models.py
 
-# 6. Start server
+# 6. (Optional) Setup AI report generation
+# Install Ollama from https://ollama.ai/download
+# ollama pull llama2:3b
+# ollama serve
+# See OLLAMA_SETUP.md for details
+
+# 7. Start server
 python main.py
 ```
 
