@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Resume Scorer v2.0 - Enhanced</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#5c633a',
+                        'brand-gold': '#c5a34f',
+                        'brand-red': '#dc2626',
+                        'brand-blue': '#1e40af',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center gap-4">
+            <img src="/static/logo.png" alt="Logo" class="h-12">
+            <div>
+                <h1 class="text-2xl font-bold text-brand-green">ATS Resume Scorer</h1>
+                <p class="text-sm text-gray-600">AI-Powered Resume Analysis Engine</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Left Column: Inputs -->
+            <div class="space-y-6">
+                <!-- Job Description -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <label class="block text-lg font-semibold text-brand-green mb-3">
+                        📋 Job Description
+                    </label>
+                    <div class="mb-3">
+                        <button 
+                            onclick="document.getElementById('jd-file-input').click()"
+                            class="text-sm bg-brand-gold text-white px-4 py-2 rounded hover:bg-opacity-90"
+                        >
+                            📁 Upload JD File
+                        </button>
+                        <input type="file" id="jd-file-input" accept=".pdf,.docx,.txt" class="hidden">
+                        <span id="jd-file-name" class="ml-3 text-sm text-gray-600"></span>
+                    </div>
+                    <textarea 
+                        id="jd-input"
+                        class="w-full h-64 p-4 border-2 border-gray-200 rounded-lg focus:border-brand-gold focus:outline-none resize-none"
+                        placeholder="Paste the job description here or upload a file..."
+                    ></textarea>
+                    <button 
+                        id="publish-jd-btn"
+                        onclick="publishJDChanges()"
+                        class="mt-3 hidden bg-brand-blue text-white px-4 py-2 rounded text-sm hover:bg-opacity-90"
+                    >
+                        🔄 Publish Changes & Re-analyze
+                    </button>
+                </div>
+
+                <!-- Resume Upload -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <label class="text-lg font-semibold text-brand-green">
+                            📄 Resume Upload
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" id="batch-mode-checkbox" class="w-4 h-4 text-brand-green" onchange="toggleBatchMode()">
+                            <span class="text-sm text-gray-700">Enable Batch Processing</span>
+                        </label>
+                    </div>
+                    <div id="single-upload-zone">
+                        <div 
+                            id="drop-zone"
+                            class="border-3 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-brand-gold transition-colors"
+                            onclick="document.getElementById('file-input').click()"
+                        >
+                            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                            </svg>
+                            <p class="mt-2 text-sm text-gray-600">Click to upload or drag and drop</p>
+                            <p class="text-xs text-gray-500">PDF or DOCX (Max 10MB)</p>
+                            <input type="file" id="file-input" accept=".pdf,.docx" class="hidden">
+                        </div>
+                        <div id="file-name" class="mt-3 text-sm text-gray-600 hidden"></div>
+                    </div>
+                    <div id="batch-upload-zone" class="hidden">
+                        <div 
+                            class="border-3 border-dashed border-blue-300 rounded-lg p-8 text-center cursor-pointer hover:border-brand-blue transition-colors"
+                            onclick="document.getElementById('batch-file-input').click()"
+                        >
+                            <svg class="mx-auto h-12 w-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                            </svg>
+                            <p class="mt-2 text-sm text-gray-600">Upload Multiple Resumes</p>
+                            <p class="text-xs text-gray-500">Select multiple PDF/DOCX files</p>
+                            <input type="file" id="batch-file-input" accept=".pdf,.docx" multiple class="hidden">
+                        </div>
+                        <div id="batch-file-list" class="mt-3 space-y-2"></div>
+                    </div>
+                </div>
+
+                <!-- Calculate Button -->
+                <button 
+                    id="calculate-btn"
+                    class="w-full bg-brand-green text-white py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    disabled
+                    onclick="analyzeResume()"
+                >
+                    Calculate ATS Score
+                </button>
+                <button 
+                    id="batch-calculate-btn"
+                    class="hidden w-full bg-brand-blue text-white py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    disabled
+                    onclick="analyzeBatch()"
+                >
+                    Analyze Batch & Generate Reports
+                </button>
+            </div>
+
+            <!-- Right Column: Results -->
+            <div id="batch-results-panel" class="hidden">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-xl font-bold text-brand-green mb-4">📊 Batch Analysis Results</h3>
+                    <div id="batch-progress" class="mb-4">
+                        <div class="flex justify-between text-sm text-gray-600 mb-2">
+                            <span>Processing: <span id="batch-current">0</span> / <span id="batch-total">0</span></span>
+                            <span id="batch-status">Analyzing...</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div id="batch-progress-bar" class="bg-brand-blue h-2 rounded-full transition-all" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div id="batch-results-list" class="space-y-3"></div>
+                </div>
+                <button 
+                    id="batch-download-all-btn"
+                    onclick="downloadAllReports()"
+                    class="w-full bg-brand-gold text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all disabled:opacity-50"
+                    disabled
+                >
+                    📦 Download All Reports (ZIP)
+                </button>
+            </div>
+            <div id="results-panel" class="hidden">
+                <!-- Score Circle -->
+                <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+                    <div class="flex flex-col items-center">
+                        <div class="relative w-48 h-48">
+                            <svg class="transform -rotate-90 w-48 h-48">
+                                <circle cx="96" cy="96" r="88" stroke="#e5e7eb" stroke-width="12" fill="none"/>
+                                <circle id="score-circle" cx="96" cy="96" r="88" stroke="#5c633a" stroke-width="12" fill="none" 
+                                    stroke-dasharray="552.92" stroke-dashoffset="552.92" stroke-linecap="round"/>
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span id="score-value" class="text-5xl font-bold text-brand-green">0</span>
+                                <span class="text-sm text-gray-600">/ 100</span>
+                            </div>
+                        </div>
+                        <div id="score-grade" class="mt-4 text-2xl font-bold text-brand-gold">Grade: -</div>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold text-brand-green mb-2">Summary</h3>
+                            <p id="summary-text" class="text-gray-700 text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Score Breakdown -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="font-semibold text-brand-green mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                        </svg>
+                        Score Breakdown
+                    </h3>
+                    <div id="breakdown-grid" class="grid grid-cols-2 gap-3"></div>
+                </div>
+
+                <!-- Skill Match Details -->
+                <div id="skill-match-section" class="bg-white rounded-lg shadow-md p-6 mb-6 hidden">
+                    <h3 class="font-semibold text-brand-green mb-4">🎯 Skill Match Analysis</h3>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-700 mb-2">✅ Technical Skills Matched</h4>
+                                <ul id="matched-tech-list" class="text-sm space-y-1"></ul>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-700 mb-2">❌ Technical Skills Missing</h4>
+                                <ul id="missing-tech-list" class="text-sm space-y-1"></ul>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-700 mb-2">✅ Soft Skills Matched</h4>
+                                <ul id="matched-soft-list" class="text-sm space-y-1"></ul>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange-700 mb-2">❌ Soft Skills Missing</h4>
+                                <ul id="missing-soft-list" class="text-sm space-y-1"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="bg-amber-50 border-l-4 border-brand-gold rounded-lg shadow-md p-6">
+                    <h3 class="font-semibold text-brand-green mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/>
+                        </svg>
+                        Recommendations
+                    </h3>
+                    <ul id="recommendations-list" class="space-y-2"></ul>
+                </div>
+
+                <!-- Download Report Button -->
+                <button 
+                    id="download-report-btn"
+                    onclick="downloadReport()"
+                    class="w-full mt-6 bg-brand-blue text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all flex items-center justify-center gap-2"
+                >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    Download Detailed Report (DOCX)
+                </button>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading-panel" class="hidden">
+                <div class="bg-white rounded-lg shadow-md p-12 text-center">
+                    <div class="inline-block animate-spin rounded-full h-16 w-16 border-4 border-gray-200 border-t-brand-green mb-4"></div>
+                    <h3 class="text-xl font-semibold text-brand-green mb-2">Analyzing Resume...</h3>
+                    <p class="text-gray-600">Running 12 comprehensive checks</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let resumeFile = null;
+        let currentAnalysisData = null;
+        let batchMode = false;
+        let batchFiles = [];
+        let currentJDId = null;
+        let currentSessionId = null;
+        let batchResults = [];
+        let currentResumeId = null;
+        let singleModeUsesDB = false;
+
+        // File upload handling
+        const fileInput = document.getElementById('file-input');
+        const dropZone = document.getElementById('drop-zone');
+        const fileName = document.getElementById('file-name');
+        const calculateBtn = document.getElementById('calculate-btn');
+        const jdInput = document.getElementById('jd-input');
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files[0]) {
+                resumeFile = e.target.files[0];
+                fileName.textContent = `✓ ${resumeFile.name}`;
+                fileName.classList.remove('hidden');
+                checkInputs();
+            }
+        });
+
+        // Batch file input
+        const batchFileInput = document.getElementById('batch-file-input');
+        const batchFileList = document.getElementById('batch-file-list');
+        
+        batchFileInput.addEventListener('change', (e) => {
+            batchFiles = Array.from(e.target.files);
+            batchFileList.innerHTML = '';
+            batchFiles.forEach((file, idx) => {
+                batchFileList.innerHTML += `
+                    <div class="flex items-center justify-between bg-blue-50 p-2 rounded text-sm">
+                        <span>📄 ${file.name}</span>
+                        <button onclick="removeBatchFile(${idx})" class="text-red-600 hover:text-red-800">✕</button>
+                    </div>
+                `;
+            });
+            checkInputs();
+        });
+
+        function removeBatchFile(idx) {
+            batchFiles.splice(idx, 1);
+            const dt = new DataTransfer();
+            batchFiles.forEach(f => dt.items.add(f));
+            batchFileInput.files = dt.files;
+            batchFileInput.dispatchEvent(new Event('change'));
+        }
+
+        function toggleBatchMode() {
+            batchMode = document.getElementById('batch-mode-checkbox').checked;
+            document.getElementById('single-upload-zone').classList.toggle('hidden', batchMode);
+            document.getElementById('batch-upload-zone').classList.toggle('hidden', !batchMode);
+            document.getElementById('calculate-btn').classList.toggle('hidden', batchMode);
+            document.getElementById('batch-calculate-btn').classList.toggle('hidden', !batchMode);
+            document.getElementById('results-panel').classList.add('hidden');
+            document.getElementById('batch-results-panel').classList.add('hidden');
+            checkInputs();
+        }
+
+        let originalJDText = '';
+        let hasAnalyzed = false;
+        
+        jdInput.addEventListener('input', () => {
+            checkInputs();
+            if (hasAnalyzed && jdInput.value !== originalJDText) {
+                document.getElementById('publish-jd-btn').classList.remove('hidden');
+            } else {
+                document.getElementById('publish-jd-btn').classList.add('hidden');
+            }
+        });
+
+        // JD file upload
+        const jdFileInput = document.getElementById('jd-file-input');
+        const jdFileName = document.getElementById('jd-file-name');
+        
+        jdFileInput.addEventListener('change', async (e) => {
+            if (e.target.files[0]) {
+                const file = e.target.files[0];
+                jdFileName.textContent = `Loading ${file.name}...`;
+                
+                const formData = new FormData();
+                formData.append('file', file);
+                
+                try {
+                    const res = await fetch('/api/parse-jd-file', { method: 'POST', body: formData });
+                    const result = await res.json();
+                    
+                    if (result.status === 'ok') {
+                        jdInput.value = result.text;
+                        jdFileName.textContent = `✓ ${file.name}`;
+                        checkInputs();
+                    } else {
+                        jdFileName.textContent = 'Error loading file';
+                    }
+                } catch (error) {
+                    jdFileName.textContent = 'Error loading file';
+                }
+            }
+        });
+
+        function checkInputs() {
+            if (batchMode) {
+                document.getElementById('batch-calculate-btn').disabled = !(batchFiles.length > 0 && jdInput.value.trim());
+            } else {
+                calculateBtn.disabled = !(resumeFile && jdInput.value.trim());
+            }
+        }
+
+        async function analyzeResume(forceDBMode = false) {
+            document.getElementById('results-panel').classList.add('hidden');
+            document.getElementById('loading-panel').classList.remove('hidden');
+
+            try {
+                // Extract resume text for report generation
+                const reader = new FileReader();
+                reader.onload = async (e) => {
+                    resumeText = e.target.result;
+                };
+                if (resumeFile.type === 'text/plain') {
+                    reader.readAsText(resumeFile);
+                }
+                
+                // Use DB mode if forced (JD change) or if already in DB mode
+                if (forceDBMode || singleModeUsesDB) {
+                    // Step 1: Upload/Update JD (reuse session if exists)
+                    if (!currentSessionId || forceDBMode) {
+                        const jdFormData = new FormData();
+                        jdFormData.append('jd_text', jdInput.value);
+                        const jdRes = await fetch('/api/upload-jd', { method: 'POST', body: jdFormData });
+                        const jdData = await jdRes.json();
+                        
+                        if (jdData.status !== 'ok') throw new Error('Failed to upload JD');
+                        
+                        // On JD change, create new session (overwrites old data)
+                        currentJDId = jdData.jd_id;
+                        currentSessionId = jdData.session_id;
+                        singleModeUsesDB = true;
+                    }
+                    
+                    // Step 2: Upload/Update Resume
+                    const formData = new FormData();
+                    formData.append('file', resumeFile);
+                    formData.append('jd_id', currentJDId);
+                    formData.append('session_id', currentSessionId);
+                    formData.append('jd_text', jdInput.value);
+                    
+                    const res = await fetch('/api/upload-resume', { method: 'POST', body: formData });
+                    const result = await res.json();
+                    
+                    if (result.status === 'ok') {
+                        currentResumeId = result.resume_id;
+                        
+                        // Fetch full analysis data for display
+                        const analysisFormData = new FormData();
+                        analysisFormData.append('resume_file', resumeFile);
+                        analysisFormData.append('jd_text', jdInput.value);
+                        analysisFormData.append('resume_data', '{}');
+                        
+                        const analysisRes = await fetch('/api/analyze', { method: 'POST', body: analysisFormData });
+                        const analysisData = await analysisRes.json();
+                        
+                        if (analysisData.status === 'ok') {
+                            displayResults(analysisData.data);
+                        }
+                    } else {
+                        alert('Error: ' + result.error);
+                    }
+                } else {
+                    // Standard mode (no DB persistence)
+                    const formData = new FormData();
+                    formData.append('resume_file', resumeFile);
+                    formData.append('jd_text', jdInput.value);
+                    formData.append('resume_data', '{}');
+                    
+                    const res = await fetch('/api/analyze', { method: 'POST', body: formData });
+                    const result = await res.json();
+
+                    if (result.status === 'ok') {
+                        displayResults(result.data);
+                    } else {
+                        alert('Error: ' + result.error);
+                    }
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            } finally {
+                document.getElementById('loading-panel').classList.add('hidden');
+            }
+        }
+
+        function publishJDChanges() {
+            originalJDText = jdInput.value;
+            document.getElementById('publish-jd-btn').classList.add('hidden');
+            analyzeResume(true); // Force DB mode to persist changes
+        }
+
+        function displayResults(data) {
+            currentAnalysisData = data;
+            hasAnalyzed = true;
+            originalJDText = jdInput.value;
+            const score = data.analysis.final_score;
+            const grade = data.analysis.grade;
+
+            // Animate score circle
+            const circle = document.getElementById('score-circle');
+            const circumference = 552.92;
+            const offset = circumference - (score / 100) * circumference;
+            circle.style.strokeDashoffset = offset;
+            
+            // Color based on score
+            if (score >= 80) circle.style.stroke = '#5c633a';
+            else if (score >= 60) circle.style.stroke = '#c5a34f';
+            else circle.style.stroke = '#dc2626';
+
+            // Update values
+            document.getElementById('score-value').textContent = Math.round(score);
+            document.getElementById('score-grade').textContent = `Grade: ${grade}`;
+            document.getElementById('summary-text').textContent = data.summary;
+
+            // Breakdown
+            const breakdownGrid = document.getElementById('breakdown-grid');
+            breakdownGrid.innerHTML = '';
+            Object.entries(data.analysis.breakdown).forEach(([key, value]) => {
+                breakdownGrid.innerHTML += `
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <div class="text-xs text-gray-600 mb-1">${key.replace(/_/g, ' ').toUpperCase()}</div>
+                        <div class="text-lg font-bold text-brand-green">${value.toFixed(1)}</div>
+                    </div>
+                `;
+            });
+
+            // Skill Match Details - Always show when JD provided
+            if (jdInput.value.trim()) {
+                document.getElementById('skill-match-section').classList.remove('hidden');
+                
+                const matchedTech = document.getElementById('matched-tech-list');
+                matchedTech.innerHTML = '';
+                (data.skill_match_details?.matched_technical || []).forEach(skill => {
+                    matchedTech.innerHTML += `<li class="text-green-700">• ${skill}</li>`;
+                });
+                if (!(data.skill_match_details?.matched_technical?.length)) {
+                    matchedTech.innerHTML = '<li class="text-gray-500">None</li>';
+                }
+                
+                const missingTech = document.getElementById('missing-tech-list');
+                missingTech.innerHTML = '';
+                (data.skill_match_details?.missing_technical || []).forEach(skill => {
+                    missingTech.innerHTML += `<li class="text-red-700">• ${skill}</li>`;
+                });
+                if (!(data.skill_match_details?.missing_technical?.length)) {
+                    missingTech.innerHTML = '<li class="text-gray-500">All matched!</li>';
+                }
+                
+                const matchedSoft = document.getElementById('matched-soft-list');
+                matchedSoft.innerHTML = '';
+                (data.skill_match_details?.matched_soft || []).forEach(skill => {
+                    matchedSoft.innerHTML += `<li class="text-blue-700">• ${skill}</li>`;
+                });
+                if (!(data.skill_match_details?.matched_soft?.length)) {
+                    matchedSoft.innerHTML = '<li class="text-gray-500">None</li>';
+                }
+                
+                const missingSoft = document.getElementById('missing-soft-list');
+                missingSoft.innerHTML = '';
+                (data.skill_match_details?.missing_soft || []).forEach(skill => {
+                    missingSoft.innerHTML += `<li class="text-orange-700">• ${skill}</li>`;
+                });
+                if (!(data.skill_match_details?.missing_soft?.length)) {
+                    missingSoft.innerHTML = '<li class="text-gray-500">All matched!</li>';
+                }
+            } else {
+                document.getElementById('skill-match-section').classList.add('hidden');
+            }
+
+            // Recommendations
+            const recList = document.getElementById('recommendations-list');
+            recList.innerHTML = '';
+            if (data.enhanced_feedback && data.enhanced_feedback.length > 0) {
+                data.enhanced_feedback.forEach(rec => {
+                    recList.innerHTML += `
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                            <span class="text-brand-gold">•</span>
+                            <span>${rec}</span>
+                        </li>
+                    `;
+                });
+            } else {
+                recList.innerHTML = '<li class="text-gray-500 text-sm">No specific recommendations at this time.</li>';
+            }
+
+            document.getElementById('results-panel').classList.remove('hidden');
+        }
+
+        let resumeText = '';
+        
+        async function downloadReport() {
+            if (!currentAnalysisData) return;
+            
+            const btn = document.getElementById('download-report-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="animate-spin inline-block w-5 h-5 border-2 border-white border-t-transparent rounded-full"></span> Generating Report...';
+            
+            try {
+                const reportData = {
+                    resume: currentAnalysisData.extraction,
+                    analysis: {
+                        final_score: currentAnalysisData.analysis.final_score,
+                        grade: currentAnalysisData.analysis.grade,
+                        breakdown: currentAnalysisData.analysis.breakdown,
+                        feedback: currentAnalysisData.enhanced_feedback,
+                        skill_match_details: currentAnalysisData.skill_match_details
+                    }
+                };
+                
+                const formData = new FormData();
+                formData.append('data', JSON.stringify(reportData));
+                formData.append('resume_text', resumeText);
+                formData.append('jd_text', jdInput.value);
+                
+                const res = await fetch('/api/generate-report', { method: 'POST', body: formData });
+                const blob = await res.blob();
+                
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `ATS_Report_${currentAnalysisData.extraction.name.replace(/\s+/g, '_')}.docx`;
+                a.click();
+                window.URL.revokeObjectURL(url);
+            } catch (error) {
+                alert('Error generating report: ' + error.message);
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    Download Detailed Report (DOCX)
+                `;
+            }
+        }
+
+        async function analyzeBatch() {
+            document.getElementById('batch-results-panel').classList.remove('hidden');
+            document.getElementById('results-panel').classList.add('hidden');
+            document.getElementById('batch-current').textContent = '0';
+            document.getElementById('batch-total').textContent = batchFiles.length;
+            document.getElementById('batch-status').textContent = 'Uploading JD...';
+            document.getElementById('batch-results-list').innerHTML = '';
+            batchResults = [];
+
+            try {
+                // Step 1: Upload JD
+                const jdFormData = new FormData();
+                jdFormData.append('jd_text', jdInput.value);
+                const jdRes = await fetch('/api/upload-jd', { method: 'POST', body: jdFormData });
+                const jdData = await jdRes.json();
+                
+                if (jdData.status !== 'ok') throw new Error('Failed to upload JD');
+                
+                currentJDId = jdData.jd_id;
+                currentSessionId = jdData.session_id;
+
+                // Step 2: Analyze all resumes
+                document.getElementById('batch-status').textContent = 'Analyzing resumes...';
+                for (let i = 0; i < batchFiles.length; i++) {
+                    const file = batchFiles[i];
+                    document.getElementById('batch-current').textContent = i + 1;
+                    document.getElementById('batch-progress-bar').style.width = `${((i + 1) / batchFiles.length) * 100}%`;
+                    
+                    const formData = new FormData();
+                    formData.append('file', file);
+                    formData.append('jd_id', currentJDId);
+                    formData.append('session_id', currentSessionId);
+                    formData.append('jd_text', jdInput.value);
+                    
+                    const res = await fetch('/api/upload-resume', { method: 'POST', body: formData });
+                    const result = await res.json();
+                    
+                    if (result.status === 'ok') {
+                        batchResults.push({
+                            name: result.name,
+                            score: result.score,
+                            grade: result.grade,
+                            resume_id: result.resume_id,
+                            file: file
+                        });
+                    }
+                }
+
+                // Step 3: Display results sorted by score
+                batchResults.sort((a, b) => b.score - a.score);
+                displayBatchResults();
+
+                // Step 4: Generate reports in background
+                document.getElementById('batch-status').textContent = 'Generating reports...';
+                await generateBatchReports();
+                
+                document.getElementById('batch-status').textContent = '✅ Complete!';
+                document.getElementById('batch-download-all-btn').disabled = false;
+            } catch (error) {
+                alert('Batch processing error: ' + error.message);
+                document.getElementById('batch-status').textContent = '❌ Error';
+            }
+        }
+
+        function displayBatchResults() {
+            const list = document.getElementById('batch-results-list');
+            list.innerHTML = '';
+            
+            batchResults.forEach((result, idx) => {
+                const gradeColor = result.grade === 'A' || result.grade === 'B' ? 'green' : 
+                                   result.grade === 'C' ? 'yellow' : 
+                                   result.grade === 'D' ? 'orange' : 'red';
+                
+                list.innerHTML += `
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-${gradeColor}-500">
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1">
+                                <div class="font-semibold text-gray-800">${idx + 1}. ${result.name}</div>
+                                <div class="text-sm text-gray-600 mt-1">
+                                    Score: <span class="font-bold text-brand-green">${result.score.toFixed(1)}</span> | 
+                                    Grade: <span class="font-bold text-${gradeColor}-600">${result.grade}</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span id="report-status-${idx}" class="text-xs text-gray-500">Pending...</span>
+                                <button 
+                                    id="download-btn-${idx}"
+                                    onclick="downloadSingleReport(${idx})"
+                                    class="hidden bg-brand-blue text-white px-3 py-1 rounded text-sm hover:bg-opacity-90"
+                                >
+                                    📎 Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        async function generateBatchReports() {
+            for (let i = 0; i < batchResults.length; i++) {
+                const result = batchResults[i];
+                const statusEl = document.getElementById(`report-status-${i}`);
+                const btnEl = document.getElementById(`download-btn-${i}`);
+                
+                try {
+                    statusEl.textContent = 'Generating...';
+                    statusEl.className = 'text-xs text-blue-600';
+                    
+                    // Fetch full analysis data
+                    const formData = new FormData();
+                    formData.append('resume_file', result.file);
+                    formData.append('jd_text', jdInput.value);
+                    formData.append('resume_data', '{}');
+                    
+                    const analysisRes = await fetch('/api/analyze', { method: 'POST', body: formData });
+                    const analysisData = await analysisRes.json();
+                    
+                    if (analysisData.status === 'ok') {
+                        // Generate report
+                        const reportData = {
+                            resume: analysisData.data.extraction,
+                            analysis: {
+                                final_score: analysisData.data.analysis.final_score,
+                                grade: analysisData.data.analysis.grade,
+                                breakdown: analysisData.data.analysis.breakdown,
+                                feedback: analysisData.data.enhanced_feedback,
+                                skill_match_details: analysisData.data.skill_match_details
+                            }
+                        };
+                        
+                        const reportFormData = new FormData();
+                        reportFormData.append('data', JSON.stringify(reportData));
+                        reportFormData.append('resume_text', '');
+                        reportFormData.append('jd_text', jdInput.value);
+                        
+                        const reportRes = await fetch('/api/generate-report', { method: 'POST', body: reportFormData });
+                        const blob = await reportRes.blob();
+                        
+                        // Store blob for later download
+                        result.reportBlob = blob;
+                        
+                        statusEl.textContent = '✅ Ready';
+                        statusEl.className = 'text-xs text-green-600';
+                        btnEl.classList.remove('hidden');
+                    }
+                } catch (error) {
+                    statusEl.textContent = '❌ Failed';
+                    statusEl.className = 'text-xs text-red-600';
+                }
+            }
+        }
+
+        function downloadSingleReport(idx) {
+            const result = batchResults[idx];
+            if (!result.reportBlob) return;
+            
+            const url = window.URL.createObjectURL(result.reportBlob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `ATS_Report_${result.name.replace(/\s+/g, '_')}.docx`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        async function downloadAllReports() {
+            // Download each report individually (ZIP would require backend support)
+            for (let i = 0; i < batchResults.length; i++) {
+                if (batchResults[i].reportBlob) {
+                    downloadSingleReport(i);
+                    await new Promise(resolve => setTimeout(resolve, 500)); // Delay between downloads
+                }
+            }
+        }
+    </script>
+</body>
+</html>

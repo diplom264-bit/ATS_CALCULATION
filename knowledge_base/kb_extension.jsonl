@@ -1,0 +1,421 @@
+{"id": "EXT_00001", "label": "Hadoop", "type": "skill", "category": "technical", "alt_labels": [], "text": "Hadoop.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00002", "label": "Spark", "type": "skill", "category": "technical", "alt_labels": [], "text": "Spark.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00003", "label": "MapReduce", "type": "skill", "category": "technical", "alt_labels": [], "text": "MapReduce.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00004", "label": "Data Lakes", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Lakes.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00005", "label": "Data Warehousing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Warehousing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00006", "label": "Big Data Architecture", "type": "skill", "category": "technical", "alt_labels": [], "text": "Big Data Architecture.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00007", "label": "NoSQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "NoSQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00008", "label": "Data Modeling", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Modeling.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00009", "label": "ETL", "type": "skill", "category": "technical", "alt_labels": [], "text": "ETL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00010", "label": "Cloud Computing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cloud Computing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00011", "label": "AWS", "type": "skill", "category": "technical", "alt_labels": [], "text": "AWS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00012", "label": "Azure", "type": "skill", "category": "technical", "alt_labels": [], "text": "Azure.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00013", "label": "Data Governance", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Governance.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00014", "label": "Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00015", "label": "Ansible", "type": "skill", "category": "technical", "alt_labels": [], "text": "Ansible.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00016", "label": "Linux", "type": "skill", "category": "technical", "alt_labels": [], "text": "Linux.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00017", "label": "Automation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Automation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00018", "label": "Cloud Platforms", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cloud Platforms.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00019", "label": "CI/CD", "type": "skill", "category": "technical", "alt_labels": [], "text": "CI/CD.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00020", "label": "Infrastructure as Code", "type": "skill", "category": "technical", "alt_labels": [], "text": "Infrastructure as Code.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00021", "label": "Kubernetes", "type": "skill", "category": "technical", "alt_labels": [], "text": "Kubernetes.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00022", "label": "Docker", "type": "skill", "category": "technical", "alt_labels": [], "text": "Docker.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00023", "label": "Terraform", "type": "skill", "category": "technical", "alt_labels": [], "text": "Terraform.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00024", "label": "Python", "type": "skill", "category": "technical", "alt_labels": [], "text": "Python.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00025", "label": "Scripting", "type": "skill", "category": "technical", "alt_labels": [], "text": "Scripting.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00026", "label": "Networking", "type": "skill", "category": "technical", "alt_labels": [], "text": "Networking.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00027", "label": "Artifactory", "type": "skill", "category": "technical", "alt_labels": [], "text": "Artifactory.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00028", "label": "Jenkins", "type": "skill", "category": "technical", "alt_labels": [], "text": "Jenkins.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00029", "label": "Maven", "type": "skill", "category": "technical", "alt_labels": [], "text": "Maven.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00030", "label": "Gradle", "type": "skill", "category": "technical", "alt_labels": [], "text": "Gradle.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00031", "label": "Build Automation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Build Automation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00032", "label": "Version Control", "type": "skill", "category": "technical", "alt_labels": [], "text": "Version Control.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00033", "label": "Git", "type": "skill", "category": "technical", "alt_labels": [], "text": "Git.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00034", "label": "JFrog CLI", "type": "skill", "category": "technical", "alt_labels": [], "text": "JFrog CLI.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00035", "label": "AI Strategy", "type": "skill", "category": "technical", "alt_labels": [], "text": "AI Strategy.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00036", "label": "Machine Learning", "type": "skill", "category": "technical", "alt_labels": [], "text": "Machine Learning.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00037", "label": "Team Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Team Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00038", "label": "Project Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Project Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00039", "label": "Data Science", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Science.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00040", "label": "Deep Learning", "type": "skill", "category": "technical", "alt_labels": [], "text": "Deep Learning.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00041", "label": "Communication", "type": "skill", "category": "technical", "alt_labels": [], "text": "Communication.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00042", "label": "Budgeting", "type": "skill", "category": "technical", "alt_labels": [], "text": "Budgeting.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00043", "label": "Stakeholder Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Stakeholder Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00044", "label": "Innovation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Innovation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00045", "label": "Mentoring", "type": "skill", "category": "technical", "alt_labels": [], "text": "Mentoring.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00046", "label": "AI Architecture", "type": "skill", "category": "technical", "alt_labels": [], "text": "AI Architecture.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00047", "label": "System Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "System Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00048", "label": "Scalability", "type": "skill", "category": "technical", "alt_labels": [], "text": "Scalability.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00049", "label": "Model Deployment", "type": "skill", "category": "technical", "alt_labels": [], "text": "Model Deployment.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00050", "label": "Research Methods", "type": "skill", "category": "technical", "alt_labels": [], "text": "Research Methods.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00051", "label": "TensorFlow", "type": "skill", "category": "technical", "alt_labels": [], "text": "TensorFlow.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00052", "label": "PyTorch", "type": "skill", "category": "technical", "alt_labels": [], "text": "PyTorch.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00053", "label": "Data Analysis", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Analysis.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00054", "label": "Statistical Analysis", "type": "skill", "category": "technical", "alt_labels": [], "text": "Statistical Analysis.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00055", "label": "Algorithm Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Algorithm Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00056", "label": "Scientific Writing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Scientific Writing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00057", "label": "Kafka", "type": "skill", "category": "technical", "alt_labels": [], "text": "Kafka.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00058", "label": "SQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "SQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00059", "label": "Java", "type": "skill", "category": "technical", "alt_labels": [], "text": "Java.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00060", "label": "Scala", "type": "skill", "category": "technical", "alt_labels": [], "text": "Scala.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00061", "label": "Data Pipelines", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Pipelines.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00062", "label": "Data Visualization", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Visualization.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00063", "label": "Data Mining", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Mining.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00064", "label": "Build Tools", "type": "skill", "category": "technical", "alt_labels": [], "text": "Build Tools.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00065", "label": "Ant", "type": "skill", "category": "technical", "alt_labels": [], "text": "Ant.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00066", "label": "Chef", "type": "skill", "category": "technical", "alt_labels": [], "text": "Chef.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00067", "label": "Ruby", "type": "skill", "category": "technical", "alt_labels": [], "text": "Ruby.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00068", "label": "Configuration Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Configuration Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00069", "label": "Excel", "type": "skill", "category": "technical", "alt_labels": [], "text": "Excel.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00070", "label": "Power BI", "type": "skill", "category": "technical", "alt_labels": [], "text": "Power BI.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00071", "label": "Statistics", "type": "skill", "category": "technical", "alt_labels": [], "text": "Statistics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00072", "label": "Data Cleansing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Cleansing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00073", "label": "Tableau", "type": "skill", "category": "technical", "alt_labels": [], "text": "Tableau.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00074", "label": "Data Integration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Integration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00075", "label": "Data Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00076", "label": "Google Cloud", "type": "skill", "category": "technical", "alt_labels": [], "text": "Google Cloud.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00077", "label": "Elasticsearch", "type": "skill", "category": "technical", "alt_labels": [], "text": "Elasticsearch.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00078", "label": "Logstash", "type": "skill", "category": "technical", "alt_labels": [], "text": "Logstash.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00079", "label": "Kibana", "type": "skill", "category": "technical", "alt_labels": [], "text": "Kibana.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00080", "label": "Log Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Log Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00081", "label": "Gerrit", "type": "skill", "category": "technical", "alt_labels": [], "text": "Gerrit.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00082", "label": "Code Review", "type": "skill", "category": "technical", "alt_labels": [], "text": "Code Review.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00083", "label": "Groovy", "type": "skill", "category": "technical", "alt_labels": [], "text": "Groovy.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00084", "label": "Jira", "type": "skill", "category": "technical", "alt_labels": [], "text": "Jira.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00085", "label": "Atlassian Suite", "type": "skill", "category": "technical", "alt_labels": [], "text": "Atlassian Suite.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00086", "label": "Agile Methodologies", "type": "skill", "category": "technical", "alt_labels": [], "text": "Agile Methodologies.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00087", "label": "Workflow Configuration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Workflow Configuration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00088", "label": "User Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "User Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00089", "label": "Keras", "type": "skill", "category": "technical", "alt_labels": [], "text": "Keras.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00090", "label": "Natural Language Processing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Natural Language Processing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00091", "label": "Computer Vision", "type": "skill", "category": "technical", "alt_labels": [], "text": "Computer Vision.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00092", "label": "Algorithms", "type": "skill", "category": "technical", "alt_labels": [], "text": "Algorithms.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00093", "label": "Windows Server", "type": "skill", "category": "technical", "alt_labels": [], "text": "Windows Server.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00094", "label": "Troubleshooting", "type": "skill", "category": "technical", "alt_labels": [], "text": "Troubleshooting.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00095", "label": "Monitoring", "type": "skill", "category": "technical", "alt_labels": [], "text": "Monitoring.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00096", "label": "System Administration", "type": "skill", "category": "technical", "alt_labels": [], "text": "System Administration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00097", "label": "Databases", "type": "skill", "category": "technical", "alt_labels": [], "text": "Databases.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00098", "label": "ITIL", "type": "skill", "category": "technical", "alt_labels": [], "text": "ITIL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00099", "label": "Puppet", "type": "skill", "category": "technical", "alt_labels": [], "text": "Puppet.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00100", "label": "Leadership", "type": "skill", "category": "technical", "alt_labels": [], "text": "Leadership.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00101", "label": "SRE", "type": "skill", "category": "technical", "alt_labels": [], "text": "SRE.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00102", "label": "DevOps", "type": "skill", "category": "technical", "alt_labels": [], "text": "DevOps.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00103", "label": "Splunk", "type": "skill", "category": "technical", "alt_labels": [], "text": "Splunk.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00104", "label": "Dashboards", "type": "skill", "category": "technical", "alt_labels": [], "text": "Dashboards.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00105", "label": "Alerting", "type": "skill", "category": "technical", "alt_labels": [], "text": "Alerting.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00106", "label": ".NET", "type": "skill", "category": "technical", "alt_labels": [], "text": ".NET.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00107", "label": "C#", "type": "skill", "category": "technical", "alt_labels": [], "text": "C#.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00108", "label": "ASP.NET", "type": "skill", "category": "technical", "alt_labels": [], "text": "ASP.NET.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00109", "label": "SQL Server", "type": "skill", "category": "technical", "alt_labels": [], "text": "SQL Server.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00110", "label": "Web API", "type": "skill", "category": "technical", "alt_labels": [], "text": "Web API.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00111", "label": "MVC", "type": "skill", "category": "technical", "alt_labels": [], "text": "MVC.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00112", "label": "Entity Framework", "type": "skill", "category": "technical", "alt_labels": [], "text": "Entity Framework.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00113", "label": "LINQ", "type": "skill", "category": "technical", "alt_labels": [], "text": "LINQ.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00114", "label": "WCAG", "type": "skill", "category": "technical", "alt_labels": [], "text": "WCAG.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00115", "label": "ARIA", "type": "skill", "category": "technical", "alt_labels": [], "text": "ARIA.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00116", "label": "Accessibility Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Accessibility Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00117", "label": "Assistive Technologies", "type": "skill", "category": "technical", "alt_labels": [], "text": "Assistive Technologies.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00118", "label": "HTML", "type": "skill", "category": "technical", "alt_labels": [], "text": "HTML.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00119", "label": "CSS", "type": "skill", "category": "technical", "alt_labels": [], "text": "CSS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00120", "label": "JavaScript", "type": "skill", "category": "technical", "alt_labels": [], "text": "JavaScript.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00121", "label": "UI/UX", "type": "skill", "category": "technical", "alt_labels": [], "text": "UI/UX.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00122", "label": "ADA Compliance", "type": "skill", "category": "technical", "alt_labels": [], "text": "ADA Compliance.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00123", "label": "Scrum", "type": "skill", "category": "technical", "alt_labels": [], "text": "Scrum.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00124", "label": "Kanban", "type": "skill", "category": "technical", "alt_labels": [], "text": "Kanban.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00125", "label": "Confluence", "type": "skill", "category": "technical", "alt_labels": [], "text": "Confluence.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00126", "label": "Android SDK", "type": "skill", "category": "technical", "alt_labels": [], "text": "Android SDK.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00127", "label": "Kotlin", "type": "skill", "category": "technical", "alt_labels": [], "text": "Kotlin.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00128", "label": "UI/UX Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "UI/UX Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00129", "label": "REST APIs", "type": "skill", "category": "technical", "alt_labels": [], "text": "REST APIs.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00130", "label": "Android Studio", "type": "skill", "category": "technical", "alt_labels": [], "text": "Android Studio.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00131", "label": "Firebase", "type": "skill", "category": "technical", "alt_labels": [], "text": "Firebase.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00132", "label": "Mobile Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "Mobile Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00133", "label": "AppDynamics", "type": "skill", "category": "technical", "alt_labels": [], "text": "AppDynamics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00134", "label": "Application Performance Monitoring", "type": "skill", "category": "technical", "alt_labels": [], "text": "Application Performance Monitoring.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00135", "label": "Metrics", "type": "skill", "category": "technical", "alt_labels": [], "text": "Metrics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00136", "label": "Application Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Application Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00137", "label": "SAST", "type": "skill", "category": "technical", "alt_labels": [], "text": "SAST.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00138", "label": "DAST", "type": "skill", "category": "technical", "alt_labels": [], "text": "DAST.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00139", "label": "Penetration Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Penetration Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00140", "label": "Vulnerability Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Vulnerability Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00141", "label": "OWASP", "type": "skill", "category": "technical", "alt_labels": [], "text": "OWASP.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00142", "label": "Secure Coding", "type": "skill", "category": "technical", "alt_labels": [], "text": "Secure Coding.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00143", "label": "Cloud Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cloud Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00144", "label": "CloudFormation", "type": "skill", "category": "technical", "alt_labels": [], "text": "CloudFormation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00145", "label": "Cloud Architecture", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cloud Architecture.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00146", "label": "AWS Lambda", "type": "skill", "category": "technical", "alt_labels": [], "text": "AWS Lambda.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00147", "label": "EC2", "type": "skill", "category": "technical", "alt_labels": [], "text": "EC2.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00148", "label": "S3", "type": "skill", "category": "technical", "alt_labels": [], "text": "S3.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00149", "label": "ARM Templates", "type": "skill", "category": "technical", "alt_labels": [], "text": "ARM Templates.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00150", "label": "Bamboo", "type": "skill", "category": "technical", "alt_labels": [], "text": "Bamboo.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00151", "label": "Bitbucket", "type": "skill", "category": "technical", "alt_labels": [], "text": "Bitbucket.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00152", "label": "Branching Strategies", "type": "skill", "category": "technical", "alt_labels": [], "text": "Branching Strategies.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00153", "label": "Blockchain", "type": "skill", "category": "technical", "alt_labels": [], "text": "Blockchain.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00154", "label": "Ethereum", "type": "skill", "category": "technical", "alt_labels": [], "text": "Ethereum.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00155", "label": "Smart Contracts", "type": "skill", "category": "technical", "alt_labels": [], "text": "Smart Contracts.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00156", "label": "Solidity", "type": "skill", "category": "technical", "alt_labels": [], "text": "Solidity.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00157", "label": "Cryptocurrency", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cryptocurrency.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00158", "label": "Distributed Ledger", "type": "skill", "category": "technical", "alt_labels": [], "text": "Distributed Ledger.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00159", "label": "Consensus Algorithms", "type": "skill", "category": "technical", "alt_labels": [], "text": "Consensus Algorithms.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00160", "label": "Web3", "type": "skill", "category": "technical", "alt_labels": [], "text": "Web3.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00161", "label": "Node.js", "type": "skill", "category": "technical", "alt_labels": [], "text": "Node.js.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00162", "label": "Business Analysis", "type": "skill", "category": "technical", "alt_labels": [], "text": "Business Analysis.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00163", "label": "Requirements Gathering", "type": "skill", "category": "technical", "alt_labels": [], "text": "Requirements Gathering.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00164", "label": "Process Improvement", "type": "skill", "category": "technical", "alt_labels": [], "text": "Process Improvement.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00165", "label": "UML", "type": "skill", "category": "technical", "alt_labels": [], "text": "UML.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00166", "label": "BPMN", "type": "skill", "category": "technical", "alt_labels": [], "text": "BPMN.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00167", "label": "Chef InSpec", "type": "skill", "category": "technical", "alt_labels": [], "text": "Chef InSpec.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00168", "label": "Compliance as Code", "type": "skill", "category": "technical", "alt_labels": [], "text": "Compliance as Code.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00169", "label": "Virtualization", "type": "skill", "category": "technical", "alt_labels": [], "text": "Virtualization.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00170", "label": "Microservices", "type": "skill", "category": "technical", "alt_labels": [], "text": "Microservices.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00171", "label": "Cloud Networking", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cloud Networking.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00172", "label": "VPC", "type": "skill", "category": "technical", "alt_labels": [], "text": "VPC.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00173", "label": "Subnets", "type": "skill", "category": "technical", "alt_labels": [], "text": "Subnets.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00174", "label": "Routing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Routing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00175", "label": "Security Groups", "type": "skill", "category": "technical", "alt_labels": [], "text": "Security Groups.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00176", "label": "Firewalls", "type": "skill", "category": "technical", "alt_labels": [], "text": "Firewalls.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00177", "label": "IAM", "type": "skill", "category": "technical", "alt_labels": [], "text": "IAM.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00178", "label": "Identity and Access Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Identity and Access Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00179", "label": "Encryption", "type": "skill", "category": "technical", "alt_labels": [], "text": "Encryption.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00180", "label": "GCP", "type": "skill", "category": "technical", "alt_labels": [], "text": "GCP.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00181", "label": "Compliance", "type": "skill", "category": "technical", "alt_labels": [], "text": "Compliance.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00182", "label": "CNC Programming", "type": "skill", "category": "technical", "alt_labels": [], "text": "CNC Programming.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00183", "label": "G-Code", "type": "skill", "category": "technical", "alt_labels": [], "text": "G-Code.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00184", "label": "CAD/CAM", "type": "skill", "category": "technical", "alt_labels": [], "text": "CAD/CAM.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00185", "label": "Machining", "type": "skill", "category": "technical", "alt_labels": [], "text": "Machining.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00186", "label": "Manufacturing Processes", "type": "skill", "category": "technical", "alt_labels": [], "text": "Manufacturing Processes.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00187", "label": "Blueprints", "type": "skill", "category": "technical", "alt_labels": [], "text": "Blueprints.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00188", "label": "Toolpath Optimization", "type": "skill", "category": "technical", "alt_labels": [], "text": "Toolpath Optimization.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00189", "label": "Programming", "type": "skill", "category": "technical", "alt_labels": [], "text": "Programming.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00190", "label": "Data Structures", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Structures.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00191", "label": "Problem Solving", "type": "skill", "category": "technical", "alt_labels": [], "text": "Problem Solving.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00192", "label": "Debugging", "type": "skill", "category": "technical", "alt_labels": [], "text": "Debugging.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00193", "label": "Software Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "Software Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00194", "label": "3D Animation", "type": "skill", "category": "technical", "alt_labels": [], "text": "3D Animation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00195", "label": "2D Animation", "type": "skill", "category": "technical", "alt_labels": [], "text": "2D Animation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00196", "label": "Motion Graphics", "type": "skill", "category": "technical", "alt_labels": [], "text": "Motion Graphics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00197", "label": "Adobe Creative Suite", "type": "skill", "category": "technical", "alt_labels": [], "text": "Adobe Creative Suite.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00198", "label": "Maya", "type": "skill", "category": "technical", "alt_labels": [], "text": "Maya.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00199", "label": "Blender", "type": "skill", "category": "technical", "alt_labels": [], "text": "Blender.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00200", "label": "Storyboarding", "type": "skill", "category": "technical", "alt_labels": [], "text": "Storyboarding.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00201", "label": "Visual Effects", "type": "skill", "category": "technical", "alt_labels": [], "text": "Visual Effects.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00202", "label": "Hardware Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Hardware Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00203", "label": "Circuit Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Circuit Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00204", "label": "Embedded Systems", "type": "skill", "category": "technical", "alt_labels": [], "text": "Embedded Systems.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00205", "label": "Microprocessors", "type": "skill", "category": "technical", "alt_labels": [], "text": "Microprocessors.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00206", "label": "PCB Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "PCB Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00207", "label": "Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00208", "label": "Validation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Validation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00209", "label": "Network Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Network Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00210", "label": "Switching", "type": "skill", "category": "technical", "alt_labels": [], "text": "Switching.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00211", "label": "LAN/WAN", "type": "skill", "category": "technical", "alt_labels": [], "text": "LAN/WAN.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00212", "label": "TCP/IP", "type": "skill", "category": "technical", "alt_labels": [], "text": "TCP/IP.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00213", "label": "VPN", "type": "skill", "category": "technical", "alt_labels": [], "text": "VPN.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00214", "label": "C++", "type": "skill", "category": "technical", "alt_labels": [], "text": "C++.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00215", "label": "Publications", "type": "skill", "category": "technical", "alt_labels": [], "text": "Publications.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00216", "label": "System Analysis", "type": "skill", "category": "technical", "alt_labels": [], "text": "System Analysis.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00217", "label": "Collaboration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Collaboration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00218", "label": "Documentation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Documentation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00219", "label": "Consul", "type": "skill", "category": "technical", "alt_labels": [], "text": "Consul.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00220", "label": "Service Discovery", "type": "skill", "category": "technical", "alt_labels": [], "text": "Service Discovery.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00221", "label": "Coverage.py", "type": "skill", "category": "technical", "alt_labels": [], "text": "Coverage.py.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00222", "label": "Code Coverage", "type": "skill", "category": "technical", "alt_labels": [], "text": "Code Coverage.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00223", "label": "Quality Assurance", "type": "skill", "category": "technical", "alt_labels": [], "text": "Quality Assurance.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00224", "label": "Database Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Database Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00225", "label": "ER Diagrams", "type": "skill", "category": "technical", "alt_labels": [], "text": "ER Diagrams.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00226", "label": "Data Wrangling", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Wrangling.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00227", "label": "Database Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Database Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00228", "label": "MySQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "MySQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00229", "label": "PostgreSQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "PostgreSQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00230", "label": "Oracle", "type": "skill", "category": "technical", "alt_labels": [], "text": "Oracle.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00231", "label": "Performance Tuning", "type": "skill", "category": "technical", "alt_labels": [], "text": "Performance Tuning.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00232", "label": "Backup and Recovery", "type": "skill", "category": "technical", "alt_labels": [], "text": "Backup and Recovery.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00233", "label": "Datadog", "type": "skill", "category": "technical", "alt_labels": [], "text": "Datadog.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00234", "label": "DevSecOps", "type": "skill", "category": "technical", "alt_labels": [], "text": "DevSecOps.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00235", "label": "Security Automation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Security Automation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00236", "label": "Continuous Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Continuous Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00237", "label": "Vulnerability Scanning", "type": "skill", "category": "technical", "alt_labels": [], "text": "Vulnerability Scanning.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00238", "label": "Containerization", "type": "skill", "category": "technical", "alt_labels": [], "text": "Containerization.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00239", "label": "Embedded C", "type": "skill", "category": "technical", "alt_labels": [], "text": "Embedded C.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00240", "label": "RTOS", "type": "skill", "category": "technical", "alt_labels": [], "text": "RTOS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00241", "label": "Microcontrollers", "type": "skill", "category": "technical", "alt_labels": [], "text": "Microcontrollers.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00242", "label": "Firmware Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "Firmware Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00243", "label": "Communication Protocols", "type": "skill", "category": "technical", "alt_labels": [], "text": "Communication Protocols.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00244", "label": "Web Development Fundamentals", "type": "skill", "category": "technical", "alt_labels": [], "text": "Web Development Fundamentals.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00245", "label": "UI/UX Basics", "type": "skill", "category": "technical", "alt_labels": [], "text": "UI/UX Basics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00246", "label": "Envoy", "type": "skill", "category": "technical", "alt_labels": [], "text": "Envoy.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00247", "label": "Service Mesh", "type": "skill", "category": "technical", "alt_labels": [], "text": "Service Mesh.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00248", "label": "Traffic Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Traffic Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00249", "label": "Falco", "type": "skill", "category": "technical", "alt_labels": [], "text": "Falco.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00250", "label": "Threat Detection", "type": "skill", "category": "technical", "alt_labels": [], "text": "Threat Detection.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00251", "label": "System Monitoring", "type": "skill", "category": "technical", "alt_labels": [], "text": "System Monitoring.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00252", "label": "FluentD", "type": "skill", "category": "technical", "alt_labels": [], "text": "FluentD.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00253", "label": "Data Collection", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Collection.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00254", "label": "Data Processing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Data Processing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00255", "label": "Fortify", "type": "skill", "category": "technical", "alt_labels": [], "text": "Fortify.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00256", "label": "Static Code Analysis", "type": "skill", "category": "technical", "alt_labels": [], "text": "Static Code Analysis.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00257", "label": "React", "type": "skill", "category": "technical", "alt_labels": [], "text": "React.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00258", "label": "Angular", "type": "skill", "category": "technical", "alt_labels": [], "text": "Angular.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00259", "label": "Vue.js", "type": "skill", "category": "technical", "alt_labels": [], "text": "Vue.js.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00260", "label": "Spring Framework", "type": "skill", "category": "technical", "alt_labels": [], "text": "Spring Framework.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00261", "label": "Django", "type": "skill", "category": "technical", "alt_labels": [], "text": "Django.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00262", "label": "Framework Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "Framework Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00263", "label": "TypeScript", "type": "skill", "category": "technical", "alt_labels": [], "text": "TypeScript.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00264", "label": "Sass", "type": "skill", "category": "technical", "alt_labels": [], "text": "Sass.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00265", "label": "Express.js", "type": "skill", "category": "technical", "alt_labels": [], "text": "Express.js.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00266", "label": "MongoDB", "type": "skill", "category": "technical", "alt_labels": [], "text": "MongoDB.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00267", "label": "Hibernate", "type": "skill", "category": "technical", "alt_labels": [], "text": "Hibernate.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00268", "label": "J2EE", "type": "skill", "category": "technical", "alt_labels": [], "text": "J2EE.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00269", "label": "JUnit", "type": "skill", "category": "technical", "alt_labels": [], "text": "JUnit.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00270", "label": "Flask", "type": "skill", "category": "technical", "alt_labels": [], "text": "Flask.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00271", "label": "Unity", "type": "skill", "category": "technical", "alt_labels": [], "text": "Unity.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00272", "label": "Game Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Game Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00273", "label": "Game Engines", "type": "skill", "category": "technical", "alt_labels": [], "text": "Game Engines.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00274", "label": "VR Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "VR Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00275", "label": "Unreal Engine", "type": "skill", "category": "technical", "alt_labels": [], "text": "Unreal Engine.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00276", "label": "GitHub", "type": "skill", "category": "technical", "alt_labels": [], "text": "GitHub.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00277", "label": "GitHub Actions", "type": "skill", "category": "technical", "alt_labels": [], "text": "GitHub Actions.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00278", "label": "GitLab", "type": "skill", "category": "technical", "alt_labels": [], "text": "GitLab.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00279", "label": "GitLab CI", "type": "skill", "category": "technical", "alt_labels": [], "text": "GitLab CI.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00280", "label": "Grafana", "type": "skill", "category": "technical", "alt_labels": [], "text": "Grafana.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00281", "label": "Information Architecture", "type": "skill", "category": "technical", "alt_labels": [], "text": "Information Architecture.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00282", "label": "User Research", "type": "skill", "category": "technical", "alt_labels": [], "text": "User Research.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00283", "label": "Wireframing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Wireframing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00284", "label": "Prototyping", "type": "skill", "category": "technical", "alt_labels": [], "text": "Prototyping.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00285", "label": "Content Strategy", "type": "skill", "category": "technical", "alt_labels": [], "text": "Content Strategy.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00286", "label": "Network Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Network Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00287", "label": "IDS/IPS", "type": "skill", "category": "technical", "alt_labels": [], "text": "IDS/IPS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00288", "label": "Security Auditing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Security Auditing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00289", "label": "Interaction Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Interaction Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00290", "label": "Usability Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Usability Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00291", "label": "Swift", "type": "skill", "category": "technical", "alt_labels": [], "text": "Swift.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00292", "label": "Objective-C", "type": "skill", "category": "technical", "alt_labels": [], "text": "Objective-C.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00293", "label": "iOS SDK", "type": "skill", "category": "technical", "alt_labels": [], "text": "iOS SDK.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00294", "label": "XCode", "type": "skill", "category": "technical", "alt_labels": [], "text": "XCode.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00295", "label": "Istio", "type": "skill", "category": "technical", "alt_labels": [], "text": "Istio.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00296", "label": "Team Leadership", "type": "skill", "category": "technical", "alt_labels": [], "text": "Team Leadership.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00297", "label": "IT Infrastructure", "type": "skill", "category": "technical", "alt_labels": [], "text": "IT Infrastructure.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00298", "label": "Cybersecurity", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cybersecurity.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00299", "label": "JaCoCO", "type": "skill", "category": "technical", "alt_labels": [], "text": "JaCoCO.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00300", "label": "Unit Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Unit Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00301", "label": "Test Automation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Test Automation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00302", "label": "Dependency Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Dependency Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00303", "label": "API Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "API Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00304", "label": "SOA", "type": "skill", "category": "technical", "alt_labels": [], "text": "SOA.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00305", "label": "iOS", "type": "skill", "category": "technical", "alt_labels": [], "text": "iOS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00306", "label": "React Native", "type": "skill", "category": "technical", "alt_labels": [], "text": "React Native.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00307", "label": "Flutter", "type": "skill", "category": "technical", "alt_labels": [], "text": "Flutter.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00308", "label": "MuleSoft", "type": "skill", "category": "technical", "alt_labels": [], "text": "MuleSoft.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00309", "label": "Anypoint Platform", "type": "skill", "category": "technical", "alt_labels": [], "text": "Anypoint Platform.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00310", "label": "API Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "API Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00311", "label": "Integration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Integration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00312", "label": "Nagios", "type": "skill", "category": "technical", "alt_labels": [], "text": "Nagios.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00313", "label": "Cisco", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cisco.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00314", "label": "Networking Protocols", "type": "skill", "category": "technical", "alt_labels": [], "text": "Networking Protocols.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00315", "label": "New Relic", "type": "skill", "category": "technical", "alt_labels": [], "text": "New Relic.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00316", "label": "Nexus", "type": "skill", "category": "technical", "alt_labels": [], "text": "Nexus.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00317", "label": "Artifact Repository", "type": "skill", "category": "technical", "alt_labels": [], "text": "Artifact Repository.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00318", "label": "Nomad", "type": "skill", "category": "technical", "alt_labels": [], "text": "Nomad.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00319", "label": "Container Orchestration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Container Orchestration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00320", "label": "Notary", "type": "skill", "category": "technical", "alt_labels": [], "text": "Notary.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00321", "label": "Container Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Container Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00322", "label": "Cryptography", "type": "skill", "category": "technical", "alt_labels": [], "text": "Cryptography.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00323", "label": "Trust Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Trust Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00324", "label": "Octopus Deploy", "type": "skill", "category": "technical", "alt_labels": [], "text": "Octopus Deploy.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00325", "label": "Deployment Automation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Deployment Automation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00326", "label": "PowerShell", "type": "skill", "category": "technical", "alt_labels": [], "text": "PowerShell.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00327", "label": "OpenShift", "type": "skill", "category": "technical", "alt_labels": [], "text": "OpenShift.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00328", "label": "OpenStack", "type": "skill", "category": "technical", "alt_labels": [], "text": "OpenStack.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00329", "label": "PL/SQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "PL/SQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00330", "label": "Oracle SQL Developer", "type": "skill", "category": "technical", "alt_labels": [], "text": "Oracle SQL Developer.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00331", "label": "Database Development", "type": "skill", "category": "technical", "alt_labels": [], "text": "Database Development.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00332", "label": "Packer", "type": "skill", "category": "technical", "alt_labels": [], "text": "Packer.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00333", "label": "PHP", "type": "skill", "category": "technical", "alt_labels": [], "text": "PHP.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00334", "label": "Laravel", "type": "skill", "category": "technical", "alt_labels": [], "text": "Laravel.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00335", "label": "RESTful APIs", "type": "skill", "category": "technical", "alt_labels": [], "text": "RESTful APIs.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00336", "label": "Symfony", "type": "skill", "category": "technical", "alt_labels": [], "text": "Symfony.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00337", "label": "Active Directory", "type": "skill", "category": "technical", "alt_labels": [], "text": "Active Directory.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00338", "label": "Product Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Product Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00339", "label": "Roadmap Planning", "type": "skill", "category": "technical", "alt_labels": [], "text": "Roadmap Planning.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00340", "label": "Prometheus", "type": "skill", "category": "technical", "alt_labels": [], "text": "Prometheus.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00341", "label": "PyTest", "type": "skill", "category": "technical", "alt_labels": [], "text": "PyTest.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00342", "label": "Automation Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Automation Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00343", "label": "Selenium", "type": "skill", "category": "technical", "alt_labels": [], "text": "Selenium.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00344", "label": "TestNG", "type": "skill", "category": "technical", "alt_labels": [], "text": "TestNG.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00345", "label": "Agile Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Agile Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00346", "label": "Performance Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Performance Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00347", "label": "Redux", "type": "skill", "category": "technical", "alt_labels": [], "text": "Redux.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00348", "label": "Robotics", "type": "skill", "category": "technical", "alt_labels": [], "text": "Robotics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00349", "label": "ROS", "type": "skill", "category": "technical", "alt_labels": [], "text": "ROS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00350", "label": "Control Systems", "type": "skill", "category": "technical", "alt_labels": [], "text": "Control Systems.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00351", "label": "Sensors", "type": "skill", "category": "technical", "alt_labels": [], "text": "Sensors.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00352", "label": "Actuators", "type": "skill", "category": "technical", "alt_labels": [], "text": "Actuators.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00353", "label": "Ruby on Rails", "type": "skill", "category": "technical", "alt_labels": [], "text": "Ruby on Rails.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00354", "label": "Salesforce", "type": "skill", "category": "technical", "alt_labels": [], "text": "Salesforce.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00355", "label": "Apex", "type": "skill", "category": "technical", "alt_labels": [], "text": "Apex.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00356", "label": "Visualforce", "type": "skill", "category": "technical", "alt_labels": [], "text": "Visualforce.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00357", "label": "Lightning", "type": "skill", "category": "technical", "alt_labels": [], "text": "Lightning.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00358", "label": "SOQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "SOQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00359", "label": "Salesforce Administration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Salesforce Administration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00360", "label": "SEO", "type": "skill", "category": "technical", "alt_labels": [], "text": "SEO.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00361", "label": "Keyword Research", "type": "skill", "category": "technical", "alt_labels": [], "text": "Keyword Research.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00362", "label": "On-Page Optimization", "type": "skill", "category": "technical", "alt_labels": [], "text": "On-Page Optimization.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00363", "label": "Off-Page Optimization", "type": "skill", "category": "technical", "alt_labels": [], "text": "Off-Page Optimization.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00364", "label": "Content Marketing", "type": "skill", "category": "technical", "alt_labels": [], "text": "Content Marketing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00365", "label": "Analytics", "type": "skill", "category": "technical", "alt_labels": [], "text": "Analytics.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00366", "label": "WebDriver", "type": "skill", "category": "technical", "alt_labels": [], "text": "WebDriver.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00367", "label": "Testing Frameworks", "type": "skill", "category": "technical", "alt_labels": [], "text": "Testing Frameworks.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00368", "label": "SharePoint", "type": "skill", "category": "technical", "alt_labels": [], "text": "SharePoint.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00369", "label": "SharePoint Framework", "type": "skill", "category": "technical", "alt_labels": [], "text": "SharePoint Framework.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00370", "label": "Software Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Software Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00371", "label": "SonarQube", "type": "skill", "category": "technical", "alt_labels": [], "text": "SonarQube.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00372", "label": "Code Quality", "type": "skill", "category": "technical", "alt_labels": [], "text": "Code Quality.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00373", "label": "Splunk Enterprise Security", "type": "skill", "category": "technical", "alt_labels": [], "text": "Splunk Enterprise Security.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00374", "label": "Security Information and Event Management (SIEM)", "type": "skill", "category": "technical", "alt_labels": [], "text": "Security Information and Event Management (SIEM).", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00375", "label": "Incident Response", "type": "skill", "category": "technical", "alt_labels": [], "text": "Incident Response.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00376", "label": "Security Analysis", "type": "skill", "category": "technical", "alt_labels": [], "text": "Security Analysis.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00377", "label": "T-SQL", "type": "skill", "category": "technical", "alt_labels": [], "text": "T-SQL.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00378", "label": "SSRS", "type": "skill", "category": "technical", "alt_labels": [], "text": "SSRS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00379", "label": "SSIS", "type": "skill", "category": "technical", "alt_labels": [], "text": "SSIS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00380", "label": "Incident Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Incident Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00381", "label": "Linux Administration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Linux Administration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00382", "label": "Windows Server Administration", "type": "skill", "category": "technical", "alt_labels": [], "text": "Windows Server Administration.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00383", "label": "Systems Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Systems Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00384", "label": "TeamCity", "type": "skill", "category": "technical", "alt_labels": [], "text": "TeamCity.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00385", "label": "Technical Sales", "type": "skill", "category": "technical", "alt_labels": [], "text": "Technical Sales.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00386", "label": "Product Knowledge", "type": "skill", "category": "technical", "alt_labels": [], "text": "Product Knowledge.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00387", "label": "Customer Engagement", "type": "skill", "category": "technical", "alt_labels": [], "text": "Customer Engagement.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00388", "label": "Networking Technologies", "type": "skill", "category": "technical", "alt_labels": [], "text": "Networking Technologies.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00389", "label": "Account Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Account Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00390", "label": "Technical Support", "type": "skill", "category": "technical", "alt_labels": [], "text": "Technical Support.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00391", "label": "Customer Relationship Management (CRM)", "type": "skill", "category": "technical", "alt_labels": [], "text": "Customer Relationship Management (CRM).", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00392", "label": "Software Development Lifecycle (SDLC)", "type": "skill", "category": "technical", "alt_labels": [], "text": "Software Development Lifecycle (SDLC).", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00393", "label": "Infrastructure as Code (IaC)", "type": "skill", "category": "technical", "alt_labels": [], "text": "Infrastructure as Code (IaC).", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00394", "label": "TFS (Team Foundation Server)", "type": "skill", "category": "technical", "alt_labels": [], "text": "TFS (Team Foundation Server).", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00395", "label": ".NET Development Tools", "type": "skill", "category": "technical", "alt_labels": [], "text": ".NET Development Tools.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00396", "label": ".NET Framework", "type": "skill", "category": "technical", "alt_labels": [], "text": ".NET Framework.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00397", "label": "UDeploy (UrbanCode Deploy)", "type": "skill", "category": "technical", "alt_labels": [], "text": "UDeploy (UrbanCode Deploy).", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00398", "label": "Deployment Strategies", "type": "skill", "category": "technical", "alt_labels": [], "text": "Deployment Strategies.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00399", "label": "UI Design Principles", "type": "skill", "category": "technical", "alt_labels": [], "text": "UI Design Principles.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00400", "label": "Figma", "type": "skill", "category": "technical", "alt_labels": [], "text": "Figma.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00401", "label": "User Testing", "type": "skill", "category": "technical", "alt_labels": [], "text": "User Testing.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00402", "label": "HTML5", "type": "skill", "category": "technical", "alt_labels": [], "text": "HTML5.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00403", "label": "CSS3", "type": "skill", "category": "technical", "alt_labels": [], "text": "CSS3.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00404", "label": "jQuery", "type": "skill", "category": "technical", "alt_labels": [], "text": "jQuery.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00405", "label": "Responsive Design", "type": "skill", "category": "technical", "alt_labels": [], "text": "Responsive Design.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00406", "label": "AngularJS", "type": "skill", "category": "technical", "alt_labels": [], "text": "AngularJS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00407", "label": "ReactJS", "type": "skill", "category": "technical", "alt_labels": [], "text": "ReactJS.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00408", "label": "Unity3D Engine", "type": "skill", "category": "technical", "alt_labels": [], "text": "Unity3D Engine.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00409", "label": "Game Development Principles", "type": "skill", "category": "technical", "alt_labels": [], "text": "Game Development Principles.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00410", "label": "3D Modeling", "type": "skill", "category": "technical", "alt_labels": [], "text": "3D Modeling.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00411", "label": "Animation", "type": "skill", "category": "technical", "alt_labels": [], "text": "Animation.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00412", "label": "User Experience Design Principles", "type": "skill", "category": "technical", "alt_labels": [], "text": "User Experience Design Principles.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00413", "label": "HashiCorp Vault", "type": "skill", "category": "technical", "alt_labels": [], "text": "HashiCorp Vault.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00414", "label": "Secrets Management", "type": "skill", "category": "technical", "alt_labels": [], "text": "Secrets Management.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00415", "label": "Access Control", "type": "skill", "category": "technical", "alt_labels": [], "text": "Access Control.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00416", "label": "WordPress", "type": "skill", "category": "technical", "alt_labels": [], "text": "WordPress.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00417", "label": "XL Deploy", "type": "skill", "category": "technical", "alt_labels": [], "text": "XL Deploy.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00418", "label": "Zabbix", "type": "skill", "category": "technical", "alt_labels": [], "text": "Zabbix.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00419", "label": "Monitoring Tools", "type": "skill", "category": "technical", "alt_labels": [], "text": "Monitoring Tools.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00420", "label": "Alerting Systems", "type": "skill", "category": "technical", "alt_labels": [], "text": "Alerting Systems.", "meta": {"source": "top_207_csv", "occupation_tags": []}}
+{"id": "EXT_00421", "label": "Network Monitoring", "type": "skill", "category": "technical", "alt_labels": [], "text": "Network Monitoring.", "meta": {"source": "top_207_csv", "occupation_tags": []}}

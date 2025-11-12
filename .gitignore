@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environments
+atsenv/
+mvpenv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment Variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+server.log
+
+# ML Models (too large for git)
+models/ner_model/
+models/qa_model/
+models/sentence_transformer/
+models/*.bin
+models/*.pt
+models/*.pth
+
+# Temporary Files
+*.tmp
+~$*.docx
+~$*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Reports & Outputs
+reports/*.pdf
+reports/*.docx
+audit_results/*.json
+
+# Test Files
+test_*.pdf
+test_*.docx
+sample_resumes/

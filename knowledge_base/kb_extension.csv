@@ -1,0 +1,51 @@
+id,label,aliases,category,occupation_tags,description
+EXT_0001,.NET Framework,.net|dotnet|dot net|.net framework|microsoft .net,technical,"Software Developer|Backend Developer|Full Stack Developer",Microsoft .NET Framework for building Windows and web applications
+EXT_0002,ASP.NET Core,asp.net core|aspnetcore|asp net core,technical,"Software Developer|Backend Developer|Web Developer",ASP.NET Core framework for building modern web applications
+EXT_0003,C# Programming,c sharp|csharp|c#|c-sharp,technical,"Software Developer|Backend Developer|Full Stack Developer",C# programming language for .NET development
+EXT_0004,Angular Development,angular|angularjs|angular 2|angular 4|angular 6|angular 7|angular 8|angular 9|angular 10,technical,"Frontend Developer|Full Stack Developer|Web Developer",Angular framework for building single-page applications
+EXT_0005,TypeScript,typescript|ts,technical,"Frontend Developer|Full Stack Developer|Web Developer",TypeScript programming language for type-safe JavaScript
+EXT_0006,Entity Framework,entity framework|ef|ef core|entity-framework,technical,"Software Developer|Backend Developer|Database Developer",Entity Framework ORM for .NET data access
+EXT_0007,RESTful API Design,rest api|restful api|rest web services|restful|web api,technical,"Software Developer|Backend Developer|API Developer",RESTful API design and development
+EXT_0008,SQL Server,sql server|microsoft sql server|mssql|t-sql|tsql,technical,"Database Developer|Backend Developer|Data Engineer",Microsoft SQL Server database management
+EXT_0009,Azure Cloud Services,azure|microsoft azure|azure cloud,technical,"Cloud Engineer|DevOps Engineer|Software Developer",Microsoft Azure cloud platform services
+EXT_0010,Git Version Control,git|github|gitlab|version control,technical,"Software Developer|DevOps Engineer",Git distributed version control system
+EXT_0011,LINQ,linq|language integrated query,technical,"Software Developer|Backend Developer",.NET Language Integrated Query for data manipulation
+EXT_0012,MVC Architecture,mvc|model view controller|asp.net mvc,technical,"Software Developer|Web Developer",Model-View-Controller architectural pattern
+EXT_0013,Web Services,web services|soap|wsdl|xml web services,technical,"Software Developer|Backend Developer|Integration Developer",Web services for application integration
+EXT_0014,JavaScript Programming,javascript|js|ecmascript|es6,technical,"Frontend Developer|Full Stack Developer|Web Developer",JavaScript programming language for web development
+EXT_0015,HTML5,html|html5|hypertext markup language,technical,"Frontend Developer|Web Developer",HTML5 markup language for web pages
+EXT_0016,CSS3,css|css3|cascading style sheets,technical,"Frontend Developer|Web Developer|UI Developer",CSS3 styling language for web design
+EXT_0017,Bootstrap Framework,bootstrap|bootstrap css|bootstrap framework,technical,"Frontend Developer|Web Developer|UI Developer",Bootstrap CSS framework for responsive design
+EXT_0018,jQuery,jquery|jquery library,technical,"Frontend Developer|Web Developer",jQuery JavaScript library for DOM manipulation
+EXT_0019,AJAX,ajax|asynchronous javascript|ajax framework,technical,"Frontend Developer|Web Developer",AJAX for asynchronous web requests
+EXT_0020,JSON,json|javascript object notation,technical,"Software Developer|Web Developer|API Developer",JSON data interchange format
+EXT_0021,XML,xml|extensible markup language,technical,"Software Developer|Integration Developer",XML markup language for data representation
+EXT_0022,Agile Methodology,agile|scrum|kanban|agile development,domain,"Software Developer|Project Manager|Scrum Master",Agile software development methodology
+EXT_0023,CI/CD,ci/cd|continuous integration|continuous deployment|devops,technical,"DevOps Engineer|Software Developer",Continuous Integration and Continuous Deployment practices
+EXT_0024,Unit Testing,unit testing|unit tests|test driven development|tdd,technical,"Software Developer|QA Engineer",Unit testing for code quality assurance
+EXT_0025,Visual Studio,visual studio|vs|visual studio ide,technical,"Software Developer",Microsoft Visual Studio integrated development environment
+EXT_0026,NuGet,nuget|nuget package manager,technical,"Software Developer|Backend Developer",.NET package manager for dependencies
+EXT_0027,Dependency Injection,dependency injection|di|ioc|inversion of control,technical,"Software Developer|Backend Developer",Dependency injection design pattern
+EXT_0028,Microservices Architecture,microservices|microservice architecture|service oriented architecture|soa,technical,"Software Developer|Solution Architect",Microservices architectural pattern
+EXT_0029,Docker Containers,docker|containerization|docker containers,technical,"DevOps Engineer|Software Developer",Docker containerization platform
+EXT_0030,Kubernetes,kubernetes|k8s|container orchestration,technical,"DevOps Engineer|Cloud Engineer",Kubernetes container orchestration platform
+EXT_0031,Azure DevOps,azure devops|vsts|visual studio team services,technical,"DevOps Engineer|Software Developer",Azure DevOps for CI/CD and project management
+EXT_0032,SignalR,signalr|asp.net signalr,technical,"Software Developer|Backend Developer",SignalR for real-time web functionality
+EXT_0033,Blazor,blazor|blazor webassembly|blazor server,technical,"Frontend Developer|Full Stack Developer",Blazor framework for building web UIs with .NET
+EXT_0034,Razor Pages,razor|razor pages|razor syntax,technical,"Web Developer|Backend Developer",Razor view engine for ASP.NET
+EXT_0035,Web API Development,web api|asp.net web api|api development,technical,"Backend Developer|API Developer",Web API development for RESTful services
+EXT_0036,OAuth Authentication,oauth|oauth2|authentication|authorization,technical,"Software Developer|Security Engineer",OAuth authentication and authorization protocol
+EXT_0037,JWT Tokens,jwt|json web tokens|token authentication,technical,"Software Developer|Security Engineer",JSON Web Tokens for secure authentication
+EXT_0038,Redis Cache,redis|redis cache|caching,technical,"Backend Developer|Performance Engineer",Redis in-memory data store for caching
+EXT_0039,MongoDB,mongodb|nosql|document database,technical,"Database Developer|Backend Developer",MongoDB NoSQL document database
+EXT_0040,PostgreSQL,postgresql|postgres|pgsql,technical,"Database Developer|Backend Developer",PostgreSQL relational database
+EXT_0041,RabbitMQ,rabbitmq|message queue|amqp,technical,"Backend Developer|Integration Developer",RabbitMQ message broker for async communication
+EXT_0042,Elasticsearch,elasticsearch|elastic search|search engine,technical,"Backend Developer|Data Engineer",Elasticsearch distributed search engine
+EXT_0043,Swagger,swagger|openapi|api documentation,technical,"API Developer|Backend Developer",Swagger for API documentation and testing
+EXT_0044,Postman,postman|api testing,technical,"API Developer|QA Engineer",Postman API testing tool
+EXT_0045,SOLID Principles,solid|solid principles|design principles,technical,"Software Developer|Solution Architect",SOLID object-oriented design principles
+EXT_0046,Design Patterns,design patterns|gof patterns|software patterns,technical,"Software Developer|Solution Architect",Software design patterns for reusable solutions
+EXT_0047,Code Review,code review|peer review|pull request review,domain,"Software Developer|Tech Lead",Code review practices for quality assurance
+EXT_0048,Technical Documentation,technical documentation|api documentation|code documentation,domain,"Software Developer|Technical Writer",Technical documentation for software systems
+EXT_0049,Problem Solving,problem solving|troubleshooting|debugging,domain,"Software Developer",Problem solving and debugging skills
+EXT_0050,Team Collaboration,team collaboration|teamwork|collaboration,domain,"Software Developer|Team Lead",Team collaboration and communication skills

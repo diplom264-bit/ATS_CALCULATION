@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  ats-calculator:
+    build: .
+    container_name: ats-calculator
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=False
+      - USE_GPU=False
+    volumes:
+      - ./app/database:/app/app/database
+      - ./models:/app/models
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
