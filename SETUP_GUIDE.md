@@ -124,6 +124,18 @@ pip uninstall torch
 pip install torch==2.1.2+cu118 --index-url https://download.pytorch.org/whl/cu118
 ```
 
+### AI Report Generation (Optional)
+For AI-powered personalized reports using Llama 2 3B:
+```bash
+# Install Ollama from https://ollama.ai/download
+# Then pull the model
+ollama pull llama2:3b
+ollama serve
+```
+
+**Note**: This is completely optional. The core ATS analysis works perfectly without it.
+See [OLLAMA_SETUP.md](OLLAMA_SETUP.md) for detailed instructions.
+
 ---
 
 ## 🧪 Testing
