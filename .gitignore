@@ -63,3 +63,14 @@ audit_results/*.json
 test_*.pdf
 test_*.docx
 sample_resumes/
+
+# Files with API keys
+find_frames.py
+generate_branded_report.py
+generate_frontend.py
+get_figma_tools.py
+discover_mcp.py
+quick_test.py
+test_hrms.py
+test_figma*.py
+test_mcp*.py
