@@ -333,4 +333,4 @@ This system implements cutting-edge NLP techniques:
 
 ---
 
-**Built with ❤️ for better hiring decisions**
+**Built  for better hiring decisions**
