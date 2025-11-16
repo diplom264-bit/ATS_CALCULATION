@@ -45,8 +45,8 @@ AI-powered resume analysis tool that evaluates ATS compatibility, job-fit releva
 
 ```bash
 # 1. Clone repository
-git clone <your-repo-url>
-cd version_4
+git clone https://github.com/diplom264-bit/ATS_CALCULATION.git
+cd ATS_CALCULATION
 
 # 2. Create virtual environment
 python -m venv atsenv
@@ -218,22 +218,40 @@ docker run -p 8000:8000 ats-calculator
 ## 📁 Project Structure
 
 ```
-version_4/
+ATS_CALCULATION/
 ├── app/
-│   ├── api/                    # FastAPI routes
-│   ├── services/               # Business logic
-│   │   ├── checkers/          # 15 scoring modules
-│   │   ├── knowledge_base_engine.py
-│   │   └── ats_analyzer.py
-│   └── database/              # SQLite DB
-├── frontend_app/
-│   ├── templates/             # HTML interface
-│   └── static/                # Assets
-├── knowledge_base/            # 18K+ skills
-├── models/                    # ML models (auto-download)
-├── main.py                    # Entry point
-├── requirements_unified.txt   # Dependencies
-└── SETUP_GUIDE.md            # Detailed setup
+│   ├── api/                           # FastAPI routes (3 files)
+│   │   ├── ats_routes.py             # Main ATS endpoints
+│   │   ├── document_parse_routes.py  # Document parsing
+│   │   └── json_analysis_routes.py   # JSON analysis
+│   ├── services/                      # Business logic (60+ files)
+│   │   ├── checkers/                 # 15 scoring modules
+│   │   ├── ml_core/                  # ML components
+│   │   ├── ml_enhanced_analyzer.py   # ML-powered analysis
+│   │   ├── smart_skill_matcher.py    # KB skill matching
+│   │   └── knowledge_base_engine.py  # KB integration
+│   └── database/                      # Database management
+│       ├── db_manager.py             # SQLite operations
+│       └── resumes/                  # 13 stored resume samples
+├── frontend_app/                      # Frontend application
+│   ├── templates/                    # HTML interface
+│   │   └── index.html               # Main UI
+│   ├── static/                       # Assets
+│   ├── report_generator.py           # Report generation
+│   └── api_server.py                 # Frontend API
+├── knowledge_base/                    # 17,326 skills
+│   ├── kb_extension.csv
+│   └── kb_extension.jsonl
+├── tests/                             # 60+ test files
+├── utils/                             # Utility functions
+├── main.py                            # Entry point
+├── requirements_unified.txt           # Dependencies
+├── README.md                          # This file
+├── CACHING_SYSTEM.md                  # Caching docs
+├── SETUP_GUIDE.md                     # Setup guide
+└── .gitignore                         # Git ignore rules
+
+Total: 140+ tracked files
 ```
 
 ---
@@ -278,9 +296,29 @@ MIT License - see [LICENSE](LICENSE) file
 
 ## 📧 Support
 
-- **Documentation**: [SETUP_GUIDE.md](SETUP_GUIDE.md)
+- **Repository**: https://github.com/diplom264-bit/ATS_CALCULATION
+- **Documentation**: [SETUP_GUIDE.md](SETUP_GUIDE.md), [CACHING_SYSTEM.md](CACHING_SYSTEM.md)
 - **API Reference**: http://localhost:8000/docs
-- **Issues**: GitHub Issues
+- **Issues**: https://github.com/diplom264-bit/ATS_CALCULATION/issues
+
+## 📦 Repository Contents
+
+**Included in Git:**
+- ✅ 140+ Python files with complete implementation
+- ✅ 13 sample resume PDFs for testing
+- ✅ 60+ comprehensive test files
+- ✅ Complete documentation (README, guides, specs)
+- ✅ Knowledge base with 17,326 skills
+- ✅ Docker configuration
+- ✅ Frontend application with report generation
+
+**Excluded (auto-generated or sensitive):**
+- ❌ Virtual environments (mvpenv/, venv/)
+- ❌ API keys and secrets
+- ❌ Database files (*.db, *.sqlite)
+- ❌ Large ML model binaries (auto-downloaded on setup)
+- ❌ Python cache (__pycache__/)
+- ❌ IDE configs (.vscode/, .idea/)
 
 ---
 
